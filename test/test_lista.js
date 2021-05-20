@@ -12,8 +12,11 @@
 
 const assert = require("chai").assert;
 
+const Lista = require("../src/Lista.js");
+
 describe("en una lista vacia", function() {
+    var lista = new Lista();
     it("Hay cero elementos", function() {
-        assert.fail("empezamos");
+        assert.equal(lista.count(), 0);
     })
 })
