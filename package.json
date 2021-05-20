@@ -1,0 +1,27 @@
+{
+    "name": "lista-tdd",
+    "version": "1.0.0",
+    "description": "Implementación de una lista de claves",
+    "main": "index.js",
+    "dependencies": {
+        "chai": "^4.3.4",
+        "nyc": "^15.1.0"
+    },
+    "devDependencies": {
+        "mocha": "^8.4.0"
+    },
+    "scripts": {
+        "test": "mocha --reporter spec",
+        "coverage": "nyc --reporter=html mocha"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/IvanCF/tp2-testing.git"
+    },
+    "author": "Ivan Cruz",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/IvanCF/tp2-testing/issues"
+    },
+    "homepage": "https://github.com/IvanCF/tp2-testing#readme"
+}

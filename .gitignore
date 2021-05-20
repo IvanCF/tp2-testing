@@ -1,0 +1,4 @@
+node_modules
+converage
+.nyc_output
+.vscode
