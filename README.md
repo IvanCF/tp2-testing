@@ -7,7 +7,10 @@ Autor:
 
 Docentes:
 
-* Esp. Ing. Estevan Volentini
+* Esp. Ing. Estevan Volentini.
+* Esp. Ing. Alejandro Permingeat.
+* Carlos Pantelides.
+
 ## TEMA: TDD - Testing
 Es una metodología de desarrollo cuyo objetivo es crear primero las pruebas y luego escribir el software. Sus siglas en Inglés son: Test Driven Development y en español significa: Desarrollo guiado por pruebas.
 
