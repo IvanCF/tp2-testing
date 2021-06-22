@@ -23,7 +23,7 @@ module.exports = class Lista {
         //console.log(this.elementos);
     }
 
-    upd(clave, valor) {
+    update(clave, valor) {
 
 
         var lst = this.elementos;
@@ -77,15 +77,6 @@ module.exports = class Lista {
         }
 
     }
-    del(clave) {
-        var lst = this.elementos;
-        for (var i = 0; i < lst.length; i++) {
-            if (lst[i].clave == clave) {
-                lst.splice(i, 1);
-                return;
-            }
-        }
-    }
 
 
     getSort() {
@@ -111,5 +102,14 @@ module.exports = class Lista {
         };
     }
 
+    eliminar(clave) {
+        var lst = this.elementos;
+        for (var i = 0; i < lst.length; i++) {
+            if (lst[i].clave == clave) {
+                lst.splice(i, 1);
+                return;
+            }
+        }
+    }
 
 }

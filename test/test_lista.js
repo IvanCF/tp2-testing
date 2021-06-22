@@ -7,7 +7,7 @@
  * test 06: Cuando se agrega un elemento a una lista vacia la lista de claves esta ordenada.
  * test 07: Cuando se agrega un elemento al principio la lista de claves esta ordenada.
  * test 08: Cuando se agrega un elemento al final la lista de claves esta ordenada.
- * 
+ * test 09: Cuando se elimina un elemento de la lista, el elemento ya no existe.
  */
 
 const assert = require("chai").assert;
@@ -65,7 +65,7 @@ describe("en una lista vacia", function() {
     describe("cuando se modifica el valor de un elemento de  la lista", function() {
         var lista = new Lista();
         lista.add("clave", "valor");
-        lista.upd("clave", "nuevo_valor");
+        lista.update("clave", "nuevo_valor");
 
         //******************** test 05 ****************************/
         it("se modifico el elemento", function() {
@@ -73,15 +73,6 @@ describe("en una lista vacia", function() {
         })
     })
 
-    describe("cuado se borra un elemento de la lista ", function() {
-        var lista = new Lista();
-        lista.del("clave");
-
-        it("no existe el elemento", function() {
-            assert.isNaN(lista.find("clave"));
-        })
-
-    })
 
     describe("cuado agrega un elemento de la lista (Inicio / Final)", function() {
         var lista = new Lista();
@@ -102,6 +93,17 @@ describe("en una lista vacia", function() {
         lista.addCola("clavef", "valorf"); //agregamos un elemento para verificar si esta ordenando
         it("Cuando se agrega al final de la lista", function() {
             assert.equal(lista.getCola(), true); //tener mas de 1 elemento ayudará a saber si esta ordenando.
+        })
+
+    })
+
+
+    describe("Cuado se borra un elemento de la lista ", function() {
+        var lista = new Lista();
+        lista.eliminar("clave");
+        //**************** test 09 *******************/
+        it("no existe el elemento que ya fue eliminado", function() {
+            assert.isNaN(lista.find("clave"));
         })
 
     })
